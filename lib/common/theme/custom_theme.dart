@@ -11,10 +11,8 @@ enum CustomTheme {
     DarkAppShadows(),
   ),
   light(
-    DarkAppColors(),
-    DarkAppShadows(),
-    //LightAppColors(),
-    //LightAppShadows(),
+    LightAppColors(),
+    LightAppShadows(),
   );
 
   const CustomTheme(this.appColors, this.appShadows);
@@ -27,7 +25,7 @@ enum CustomTheme {
       case CustomTheme.dark:
         return darkTheme;
       case CustomTheme.light:
-        return darkTheme;
+        return lightTheme;
     }
   }
 }
