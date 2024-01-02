@@ -13,6 +13,7 @@ class Arrow extends StatelessWidget {
     return Icon(
       icon,
       size: size,
+      color: Colors.white, // 추가해 줌, 색상이 검정으로 나와서 화살표 안 보임
     );
   }
 

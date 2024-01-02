@@ -8,9 +8,11 @@ typedef ColorProvider = Color Function();
 abstract class AbstractThemeColors {
   const AbstractThemeColors();
 
-  Color get seedColor => const Color(0xff26ff8c);
+  //Color get seedColor => const Color(0xff26ff8c);
+  Color get seedColor => const Color.fromARGB(255, 16, 16, 18);
 
-  Color get veryBrightGrey => AppColors.brightGrey;
+  //Color get veryBrightGrey => AppColors.brightGrey;
+  Color get veryBrightGrey => AppColors.veryDarkGrey;
 
   Color get drawerBg => const Color.fromARGB(255, 255, 255, 255);
 
@@ -22,7 +24,7 @@ abstract class AbstractThemeColors {
 
   Color get inActivate => const Color.fromARGB(255, 200, 207, 220);
 
-  Color get activate => const Color.fromARGB(255, 63, 72, 95);
+  Color get activate => const Color.fromARGB(255, 16, 16, 18); //const Color.fromARGB(255, 63, 72, 95);
 
   Color get badgeBg => AppColors.blueGreen;
 
@@ -45,4 +47,10 @@ abstract class AbstractThemeColors {
   Color get snackbarBgColor => AppColors.mediumBlue;
 
   Color get blueButtonBackground => AppColors.darkBlue;
+
+  Color get appBarBackground => const Color.fromARGB(255, 16, 16, 18);
+
+  Color get buttonBackground => const Color.fromARGB(255, 48, 48, 48);
+
+  Color get roundedLayoutBackground => const Color.fromARGB(255, 24, 24, 18);
 }
