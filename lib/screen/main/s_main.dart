@@ -36,6 +36,8 @@ class MainScreenState extends State<MainScreen>
 
   static double get bottomNavigationBarBorderRadius => 30.0;
 
+  static const double bottomNavigatorHeight = 50;
+
   @override
   FutureOr<void> afterFirstLayout(BuildContext context) async {
     //await login();
@@ -98,7 +100,7 @@ class MainScreenState extends State<MainScreen>
     return isFirstRouteInCurrentTab;
   }
 
-  Widget _buildBottomNavigationBar(BuildContext context) {
+  Widget _buildBottomNavigationBar(BuildContext context) { // 큰 프로젝트의 경우 따로 클래스 분리
     return Container(
       decoration: const BoxDecoration(
         boxShadow: [

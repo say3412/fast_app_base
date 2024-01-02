@@ -11,13 +11,16 @@ class BingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RoundedContainer(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          text.text.white.size(20).bold.make(),
-          Arrow(), // 색상 white으로 수정해 줌
-        ],
+    return Tap(
+      onTap: onTap,
+      child: RoundedContainer(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            text.text.white.size(20).bold.make(),
+            Arrow(), // 색상 white으로 수정해 줌
+          ],
+        ),
       ),
     );
   }

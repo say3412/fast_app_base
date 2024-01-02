@@ -10,6 +10,8 @@ class BankAccountWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var numberFormat = NumberFormat('###,###,###,###'); // 3자리마다 , 찍도록 추가
+
     return Row(
       children: [
         Image.asset(
@@ -25,7 +27,7 @@ class BankAccountWidget extends StatelessWidget {
                   .white
                   .size(12)
                   .make(),
-              ("${account.balance}원").text.white.bold.size(18).make(),
+              ("${numberFormat.format(account.balance)}원").text.white.bold.size(18).make(),
             ],
           ).pSymmetric(h: 20, v: 10),
         ),
